@@ -49,3 +49,5 @@ Termina has park kind arch benefit.
 Termina has park kind arch marry.
 
 Termina has park kind arch land.
+
+Termina has park style.
