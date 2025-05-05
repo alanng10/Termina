@@ -52,6 +52,10 @@ Termina has park kind arch land.
 
 Termina has park style.
 
+Termina has park mark.
+
+Termina has park cross.
+
 Termina is did.
 
 Termina has major.
