@@ -56,6 +56,6 @@ Termina has park mark.
 
 Termina has park cross.
 
-Termina is did.
+Termina is did. 
 
 Termina has major.
