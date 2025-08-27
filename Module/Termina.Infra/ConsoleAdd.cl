@@ -73,19 +73,6 @@ class ConsoleAdd : Any
 
             inf (ba)
             {
-                var Int countA;
-                countA : count - 1;
-
-                var Int ki;
-                ki : countA * kka;
-
-                this.InfraInfra.DataCopy(data, 0, data, kka, ki);
-
-                this.Count : countA;
-            }
-
-            inf (~ba)
-            {
                 var Int kd;
                 kd : ka * kka;
 
@@ -106,6 +93,19 @@ class ConsoleAdd : Any
                 this.Data : data;
 
                 this.Capaci : capaci;
+            }
+
+            inf (~ba)
+            {
+                var Int countA;
+                countA : count - 1;
+
+                var Int ki;
+                ki : countA * kka;
+
+                this.InfraInfra.DataCopy(data, 0, data, kka, ki);
+
+                this.Count : countA;
             }
         }
 
