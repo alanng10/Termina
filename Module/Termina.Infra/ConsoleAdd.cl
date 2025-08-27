@@ -66,6 +66,11 @@ class ConsoleAdd : Any
             var Int ka;
             ka : capaci * 2;
 
+            inf (this.MaxCapaci < ka)
+            {
+                ka : this.MaxCapaci;
+            }
+
             var Int kd;
             kd : ka * kka;
 
