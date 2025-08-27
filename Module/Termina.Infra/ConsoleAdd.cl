@@ -97,12 +97,15 @@ class ConsoleAdd : Any
 
             inf (~ba)
             {
+                var Int countA;
+                countA : count - 1;
+
                 var Int ki;
-                ki : (count - 1) * kka;
+                ki : countA * kka;
 
                 this.InfraInfra.DataCopy(data, 0, data, kka, ki);
 
-                this.Count : count - 1;
+                this.Count : countA;
             }
         }
 
