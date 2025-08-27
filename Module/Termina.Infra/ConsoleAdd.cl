@@ -22,12 +22,22 @@ class ConsoleAdd : Any
         return true;
     }
 
-    field prusate Range Range { get { return data; } set { data : value; } }
-    field prusate Data Data { get { return data; } set { data : value; } }
     field precate InfraInfra InfraInfra { get { return data; } set { data : value; } }
     field precate StringComp StringComp { get { return data; } set { data : value; } }
+    field precate Range Range { get { return data; } set { data : value; } }
+    field precate Data Data { get { return data; } set { data : value; } }
     field precate Int Count { get { return data; } set { data : value; } }
     field precate Int Capacity { get { return data; } set { data : value; } }
+
+    maide prusate String Result()
+    {
+        this.Range.Index : 0;
+        this.Range.Count : this.Count;
+
+        var String a;
+        a : this.StringComp.CreateData(this.Data, this.Range);
+        return a;
+    }
 
     maide prusate Bool Clear()
     {
