@@ -47,9 +47,6 @@ class ConsoleAdd : Any
 
     maide prusate Bool Execute(var Int n)
     {
-        var InfraInfra infraInfra;
-        infraInfra : this.InfraInfra;
-
         var Int count;
         var Int capaci;
         count : this.Count;
@@ -71,36 +68,50 @@ class ConsoleAdd : Any
                 ka : this.MaxCapaci;
             }
 
-            var Int kd;
-            kd : ka * kka;
+            inf (count < ka)
+            {
+                var Int kd;
+                kd : ka * kka;
 
-            var Data k;
-            k : new Data;
-            k.Count : kd;
-            k.Init();
+                var Data k;
+                k : new Data;
+                k.Count : kd;
+                k.Init();
 
-            var Int kk;
-            kk : count * kka;
-            infraInfra.DataCopy(k, 0, data, 0, kk);
+                var Int kk;
+                kk : count * kka;
+                this.InfraInfra.DataCopy(k, 0, data, 0, kk);
 
-            data : k;
+                data : k;
 
-            capaci : ka;
+                capaci : ka;
 
-            this.Data : data;
+                this.Data : data;
 
-            this.Capaci : capaci;
+                this.Capaci : capaci;
+
+                this.AddChar(value);
+
+                return true;
+            }
         }
 
+        this.AddChar(value);
+
+        return true;
+    }
+
+    maide precate Bool AddChar(var Int value)
+    {
+        var Int kka;
+        kka : 4;
+
         var Int ke;
-        ke : count * kka;
+        ke : this.Count * kka;
 
-        infraInfra.DataCharSet(data, ke, n);
+        this.InfraInfra.DataCharSet(data, ke, value);
 
-        count : count + 1;
-
-        this.Count : count;
-
+        this.Count : this.Count + 1;
         return true;
     }
 }
