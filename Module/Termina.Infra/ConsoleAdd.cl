@@ -53,7 +53,7 @@ class ConsoleAdd : Any
         var Int count;
         var Int capacity;
         count : this.Count;
-        capacity : this.Capacity;
+        capacity : this.Capaci;
 
         var Data data;
         data : this.Data;
@@ -84,7 +84,7 @@ class ConsoleAdd : Any
 
             this.Data : data;
 
-            this.Capacity : capacity;
+            this.Capaci : capacity;
         }
 
         var Int ke;
