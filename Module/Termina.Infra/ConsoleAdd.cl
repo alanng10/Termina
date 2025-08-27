@@ -60,11 +60,8 @@ class ConsoleAdd : Any
 
         inf (~(count < capaci))
         {
-            var Int newCapaci;
-            newCapaci : capaci * 2;
-
             var Bool ba;
-            ba : this.MaxCapaci = newCapaci;
+            ba : this.MaxCapaci = capaci;
 
             inf (ba)
             {
@@ -81,8 +78,11 @@ class ConsoleAdd : Any
 
             inf (~ba)
             {
+                var Int newCapaci;
+                newCapaci : capaci * 2;
+
                 var Int kd;
-                kd : ka * kka;
+                kd : newCapaci * kka;
 
                 var Data k;
                 k : new Data;
@@ -96,7 +96,7 @@ class ConsoleAdd : Any
 
                 data : k;
 
-                capaci : ka;
+                capaci : newCapaci;
 
                 this.Data : data;
 
