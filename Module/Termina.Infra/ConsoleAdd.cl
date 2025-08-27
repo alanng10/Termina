@@ -51,9 +51,9 @@ class ConsoleAdd : Any
         infraInfra : this.InfraInfra;
 
         var Int count;
-        var Int capacity;
+        var Int capaci;
         count : this.Count;
-        capacity : this.Capaci;
+        capaci : this.Capaci;
 
         var Data data;
         data : this.Data;
@@ -61,10 +61,10 @@ class ConsoleAdd : Any
         var Int kka;
         kka : 4;
 
-        inf (~(count < capacity))
+        inf (~(count < capaci))
         {
             var Int ka;
-            ka : capacity * 2;
+            ka : capaci * 2;
 
             var Int kd;
             kd : ka * kka;
@@ -80,11 +80,11 @@ class ConsoleAdd : Any
 
             data : k;
 
-            capacity : ka;
+            capaci : ka;
 
             this.Data : data;
 
-            this.Capaci : capacity;
+            this.Capaci : capaci;
         }
 
         var Int ke;
