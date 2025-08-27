@@ -94,13 +94,9 @@ class ConsoleAdd : Any
 
                 this.InfraInfra.DataCopy(k, 0, data, 0, kh);
 
-                data : k;
+                this.Data : k;
 
-                capaci : newCapaci;
-
-                this.Data : data;
-
-                this.Capaci : capaci;
+                this.Capaci : newCapaci;
             }
         }
 
