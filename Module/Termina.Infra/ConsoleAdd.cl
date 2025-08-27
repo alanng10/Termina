@@ -1,0 +1,91 @@
+class ConsoleAdd : Any
+{
+    maide prusate Bool Init()
+    {
+        base.Init();
+        this.InfraInfra : share InfraInfra;
+        this.StringComp : share StringComp;
+
+        this.Range : new Range;
+        this.Range.Init();
+
+        var Int capacity;
+        capacity : 16;
+
+        var Data data;
+        data : new Data;
+        data.Count : capacity * 4;
+        data.Init();
+
+        this.Data : data;
+        this.Capacity : capacity;
+        return true;
+    }
+
+    field prusate Range Range { get { return data; } set { data : value; } }
+    field prusate Data Data { get { return data; } set { data : value; } }
+    field precate InfraInfra InfraInfra { get { return data; } set { data : value; } }
+    field precate StringComp StringComp { get { return data; } set { data : value; } }
+    field precate Int Count { get { return data; } set { data : value; } }
+    field precate Int Capacity { get { return data; } set { data : value; } }
+
+    maide prusate Bool Clear()
+    {
+        this.Count : 0;
+        return true;
+    }
+
+    maide prusate Bool Execute(var Int n)
+    {
+        var InfraInfra infraInfra;
+        infraInfra : this.InfraInfra;
+
+        var Int count;
+        var Int capacity;
+        count : this.Count;
+        capacity : this.Capacity;
+
+        var Data data;
+        data : this.Data;
+
+        var Int kka;
+        kka : 4;
+
+        inf (~(count < capacity))
+        {
+            var Int ka;
+            ka : capacity * 2;
+
+            var Int kd;
+            kd : ka * kka;
+
+            var Data k;
+            k : new Data;
+            k.Count : kd;
+            k.Init();
+
+            var Int kk;
+            kk : count * kka;
+            infraInfra.DataCopy(k, 0, data, 0, kk);
+
+            data : k;
+
+            capacity : ka;
+
+            this.Data : data;
+
+            this.Capacity : capacity;
+        }
+
+        var Int ke;
+        ke : count * kka;
+
+        infraInfra.DataCharSet(data, ke, n);
+
+        count : count + 1;
+
+        this.Count : count;
+
+        return true;
+    }
+}
