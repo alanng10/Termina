@@ -60,18 +60,26 @@ class ConsoleAdd : Any
 
         inf (~(count < capaci))
         {
-            var Int ka;
-            ka : capaci * 2;
-
-            inf (this.MaxCapaci < ka)
-            {
-                ka : this.MaxCapaci;
-            }
+            var Int newCapaci;
+            newCapaci : capaci * 2;
 
             var Bool ba;
-            ba : count < ka;
+            ba : this.MaxCapaci = newCapaci;
 
             inf (ba)
+            {
+                var Int countA;
+                countA : count - 1;
+
+                var Int ki;
+                ki : countA * kka;
+
+                this.InfraInfra.DataCopy(data, 0, data, kka, ki);
+
+                this.Count : countA;
+            }
+
+            inf (~ba)
             {
                 var Int kd;
                 kd : ka * kka;
@@ -93,19 +101,6 @@ class ConsoleAdd : Any
                 this.Data : data;
 
                 this.Capaci : capaci;
-            }
-
-            inf (~ba)
-            {
-                var Int countA;
-                countA : count - 1;
-
-                var Int ki;
-                ki : countA * kka;
-
-                this.InfraInfra.DataCopy(data, 0, data, kka, ki);
-
-                this.Count : countA;
             }
         }
 
