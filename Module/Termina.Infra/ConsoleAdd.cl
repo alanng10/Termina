@@ -23,7 +23,6 @@ class ConsoleAdd : Any
     field precate StringComp StringComp { get { return data; } set { data : value; } }
     field precate Int InitCapaci { get { return 16; } set { } }
     field precate Int MaxCapaci { get { return 2048; } set { } }
-    field precate StringComp StringComp { get { return data; } set { data : value; } }
     field precate Range Range { get { return data; } set { data : value; } }
     field precate Data Data { get { return data; } set { data : value; } }
     field precate Int Count { get { return data; } set { data : value; } }
