@@ -4,6 +4,7 @@ class ConsoleAdd : Any
     {
         base.Init();
         this.InfraInfra : share InfraInfra;
+        this.TextInfra : share TextInfra;
         this.StringComp : share StringComp;
 
         this.Range : new Range;
@@ -20,6 +21,7 @@ class ConsoleAdd : Any
     }
 
     field precate InfraInfra InfraInfra { get { return data; } set { data : value; } }
+    field precate TextInfra TextInfra { get { return data; } set { data : value; } }
     field precate StringComp StringComp { get { return data; } set { data : value; } }
     field precate Int InitCapaci { get { return 16; } set { } }
     field precate Int MaxCapaci { get { return 2048; } set { } }
@@ -67,10 +69,7 @@ class ConsoleAdd : Any
                 var Int countA;
                 countA : count - 1;
 
-                var Int ki;
-                ki : countA * kka;
-
-                this.InfraInfra.DataCopy(data, 0, data, kka, ki);
+                this.TextInfra.Copy(data, 0, data, 1, countA);
 
                 this.Count : countA;
             }
