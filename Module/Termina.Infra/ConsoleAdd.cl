@@ -3,7 +3,6 @@ class ConsoleAdd : Any
     maide prusate Bool Init()
     {
         base.Init();
-        this.InfraInfra : share InfraInfra;
         this.TextInfra : share TextInfra;
         this.StringComp : share StringComp;
 
@@ -20,7 +19,6 @@ class ConsoleAdd : Any
         return true;
     }
 
-    field precate InfraInfra InfraInfra { get { return data; } set { data : value; } }
     field precate TextInfra TextInfra { get { return data; } set { data : value; } }
     field precate StringComp StringComp { get { return data; } set { data : value; } }
     field precate Int InitCapaci { get { return 16; } set { } }
@@ -102,13 +100,7 @@ class ConsoleAdd : Any
 
     maide precate Bool AddChar(var Int value)
     {
-        var Int kka;
-        kka : 4;
-
-        var Int ke;
-        ke : this.Count * kka;
-
-        this.InfraInfra.DataCharSet(this.Data, ke, value);
+        this.TextInfra.DataCharSet(this.Data, this.Count, value);
 
         this.Count : this.Count + 1;
         return true;
