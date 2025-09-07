@@ -87,10 +87,7 @@ class ConsoleAdd : Any
                 k.Count : kd;
                 k.Init();
 
-                var Int kh;
-                kh : count * kka;
-
-                this.InfraInfra.DataCopy(k, 0, data, 0, kh);
+                this.TextInfra.DataCopy(k, 0, data, 0, count);
 
                 this.Data : k;
 
