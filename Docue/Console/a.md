@@ -20,4 +20,6 @@ The kernel call has param that is program ident Int, and buffer kind.
 Termina display console by done the kernel call to get the buffer
 char list of the program in Termina draw execute. 
 
+Termina display console at most the limitel of the buffer.
+
 The kernel call is call execute certain.
