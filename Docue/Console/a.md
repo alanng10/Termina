@@ -14,6 +14,9 @@ Inf current char list has max count, the char list is shifted
 1 pos to front of the buffer, and the char is add to last pos
 in buffer.
 
+Console out and err 1 put will add char list to the buffers, and
+after the add will done kernel call to trigg Termina data event.
+
 Kernel has kernel call for getting the buffers char list
 for Termina.
 The kernel call has param that is program ident Int, and buffer kind.
