@@ -18,7 +18,7 @@ Kernel has kernel call for getting the buffers char list
 for Termina.
 The kernel call has param that is program ident Int, and buffer kind.
 Termina display console by done the kernel call to get the buffer
-char list of the program in Termina draw execute.
+char list of the program in Termina data event execute.
 
 Termina display console at most the limitel of the buffer.
 
