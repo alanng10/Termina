@@ -17,13 +17,14 @@ in buffer.
 Console out and err 1 put will add char list to the buffers, and
 after the add will done kernel call to trigg Termina data event.
 
+The data event is by kernel put Termina to execute queue and queue event
+to Termina event loop.
+
 Kernel has kernel call for getting the buffers char list
 for Termina.
 The kernel call has param that is program ident Int, and buffer kind.
 Termina done the kernel call to get the buffer char list of the program
 in Termina data event execute.
-The data event is by kernel put Termina to execute queue and queue event
-to Termina event loop. 
 Termina update view frame in data event, display the char list in
 draw execute.
 
