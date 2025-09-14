@@ -32,3 +32,5 @@ Termina display console at most the limitel of the buffer.
 The kernel call is call execute certain.
 
 Console inn inf did enter will add to out buffer and combined buffer.
+
+Termina tool module System.Infra class Extern to done the kernel call.
